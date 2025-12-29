@@ -1,6 +1,6 @@
 # John Villa – Email Developer Portfolio
 
-🔗 **Live Site:** https://jdv083.github.io
+🔗 **Live Site:** [https://jdv083.github.io](https://jdv083.github.io/johnvilla.github.io/)
 
 Welcome to my personal portfolio. I’m an aspiring **Email Developer / Marketing Automation Specialist** transitioning from an automation background and actively building real-world projects focused on modern, scalable email development.
 
@@ -61,8 +61,8 @@ This site is built and deployed using **GitHub Pages** to demonstrate:
 
 If you’re looking for a **hardworking email developer who loves creating new projects**, I’d love to connect.
 
-- 💼 Portfolio: https://jdv083.github.io/johnvilla.github.io/
-- 🧑‍💻 GitHub: https://github.com/jdv083/email-development
+- 💼 Portfolio: [https://jdv083.github.io/johnvilla.github.io/](https://github.com/jdv083/email-development)
+- 🧑‍💻 GitHub: https://github.com/jdv083
 
 ---
 
