@@ -1,0 +1,138 @@
+/* =========================================================
+   Calm & Trustworthy Theme
+   Bootstrap Overrides for Email Portfolio
+   ========================================================= */
+
+/* -------------------------
+   Theme Variables
+------------------------- */
+
+:root {
+  /* Brand Palette */
+  --brand-bg-main: #FFFBEB;        /* Cream */
+  --brand-text-main: #1E293B;      /* Dark Slate */
+  --brand-text-muted: #475569;     /* Muted Slate */
+
+  --brand-primary: #065F46;        /* Forest Green */
+  --brand-primary-hover: #047857; /* Hover Green */
+  --brand-accent-soft: #A7F3D0;    /* Sage */
+
+  --brand-white: #FFFFFF;
+
+  /* Bootstrap Overrides */
+  --bs-body-bg: var(--brand-bg-main);
+  --bs-body-color: var(--brand-text-main);
+
+  --bs-primary: var(--brand-primary);
+  --bs-primary-rgb: 6, 95, 70;
+
+  --bs-link-color: var(--brand-primary);
+  --bs-link-hover-color: var(--brand-primary-hover);
+
+  --bs-body-font-family: "Source Sans 3", system-ui, -apple-system, sans-serif;
+}
+
+/* -------------------------
+   Typography
+------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  color: var(--brand-text-main);
+}
+
+/* Muted text */
+.text-muted {
+  color: var(--brand-text-muted) !important;
+}
+
+/* -------------------------
+   Background Utilities
+------------------------- */
+.bg-light {
+  background-color: var(--brand-bg-main) !important;
+}
+
+.bg-white {
+  background-color: var(--brand-white) !important;
+}
+
+.bg-soft {
+  background-color: var(--brand-accent-soft);
+}
+
+/* -------------------------
+   Buttons
+------------------------- */
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: var(--brand-white);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--brand-primary-hover);
+  border-color: var(--brand-primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--brand-accent-soft);
+  color: var(--brand-text-main);
+}
+
+/* -------------------------
+   Cards (Portfolio / Email Previews)
+------------------------- */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+/* -------------------------
+   Links
+------------------------- */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------
+   Sections
+------------------------- */
+.section {
+  padding: 4rem 1.5rem;
+}
+
+/* -------------------------
+   Email-Specific Touches
+------------------------- */
+.email-meta {
+  font-size: 0.875rem;
+  color: var(--brand-text-muted);
+}
+
