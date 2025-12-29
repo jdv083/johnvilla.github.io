@@ -67,21 +67,3 @@ If you’re looking for a **hardworking email developer who loves creating new p
 ---
 
 Thanks for checking out my work!
-
-
-## 📧 Night Sky Digest – Astronomy Newsletter
-
-![Night Sky Digest email preview](img/portfolio/newsletter-night-sky.jpg)
-
-**Description:**  
-A responsive newsletter email focused on astronomy content, designed with accessibility and readability in mind.
-
-**Key Features:**
-- Mobile-first layout
-- Dark-mode friendly color handling
-- Table-based HTML for broad client support
-- Outlook-safe fallbacks
-
-🔗 **Live Preview:** https://jdv083.github.io/projects/night-sky-digest  
-🔗 **Source Code:** https://github.com/jdv083/johnvilla.github.io/tree/main/projects/night-sky-digest
-
