@@ -11,11 +11,11 @@
   /* Brand Palette */
   --brand-bg-main: #FFFBEB;        /* Cream */
   --brand-text-main: #1E293B;      /* Dark Slate */
-  --brand-text-muted: #475569;     /* Muted Slate */
+  --brand-text-muted: #6B7280;     /* Muted Slate */
 
-  --brand-primary: #065F46;        /* Forest Green */
+  --brand-primary: #1F2933;        /* Forest Green */
   --brand-primary-hover: #047857; /* Hover Green */
-  --brand-accent-soft: #A7F3D0;    /* Sage */
+  --brand-accent-soft: #2563EB ;    /* Sage */
 
   --brand-white: #FFFFFF;
 

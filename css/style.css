@@ -1,284 +1,246 @@
-/*============= RESET STYLE =============*/
+/*============= CSS VARIABLES =============*/
+:root {
+   --bg-main: #FFFFFF;
+   --bg-card: #F9FAFB;
+   --text-main: #1F2933;
+   --text-muted: #6B7280;
+   --accent: #2563EB;
+   --accent-hover: #1D4ED8;
+   --border-light: #E5E7EB;
+}
 
+/*============= RESET STYLE =============*/
 html {
    padding: env(safe-area-inset);
-   scroll-behavior: auto!important;
+   scroll-behavior: auto !important;
 }
 
 /*-- Body Resets --*/
 body {
-   font-family: 'Open Sans', sans-serif;
-   color: #1E293B;
-   background-color: #FFFBEB;
+   font-family: Inter, system-ui, -apple-system, sans-serif;
+   color: var(--text-main);
+   background-color: var(--bg-main);
 }
 
-/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+/*-- Remove Blue Browser Outline --*/
 a:focus,
 button:focus {
-  outline: 0 !important;
-  -webkit-appearance: none;
-  box-shadow: none !important;
+   outline: 0 !important;
+   box-shadow: none !important;
 }
 
-/*-- Pointer Cursor On Links & Buttons --*/
-a, .btn, button {
-   cursor: pointer!important;
+/*-- Pointer Cursor --*/
+a,
+.btn,
+button {
+   cursor: pointer !important;
    text-decoration: none;
-   transition: all .5s ease;
+   transition: all 0.3s ease;
 }
 
-/*-- Change Links Color & Remove Underline --*/
+/*-- Links --*/
 a {
-   color: #065F46;
-   text-decoration: none;
- }
+   color: var(--accent);
+}
 
-/*-- Make Paragraph Text Larger --*/
+/*-- Paragraphs --*/
 p {
-   font-size: 1.2rem!important;
- }
- 
-.btn, .img-fluid {
-   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+   font-size: 1.1rem;
+   line-height: 1.6;
+}
+
+/*-- Cards & Images --*/
+.btn,
+.img-fluid {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /*============= NAVIGATION =============*/
+.navbar {
+   padding: 0.6rem 0.9rem;
+   font-size: 0.9rem;
+   letter-spacing: 0.05rem;
+   background-color: rgba(30, 41, 59, 0.9);
+   font-weight: 600;
+   text-transform: uppercase;
+}
 
 .navbar-brand img {
    height: 2rem;
 }
-.navbar {
-   padding: .6rem .9rem;
-   font-size: .95rem;
-   letter-spacing: .06rem;
-   background-color: rgba(30, 41, 59, 0.95);
-   font-weight: 700;
-   text-transform: uppercase;
-}
+
 .navbar-nav li {
-   padding-right: .8rem;
+   padding-right: 0.8rem;
 }
+
 .navbar-nav .nav-link {
-   padding-top: .8rem;
-   color: white;
-   text-shadow: 0px 0px 2px rgba(30, 41, 59, 0.95);
+   padding-top: 0.8rem;
+   color: #ffffff;
 }
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-   color: #A7F3D0;
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+   color: #DBEAFE;
 }
+
+.navbar-toggler {
+   border: none !important;
+}
+
 .svg-inline--fa.fa-bars {
    color: white;
    font-size: 1.6rem;
 }
 
-button:active, button:focus {
-   outline: 0;
-}
-.navbar-toggler {
-   border: none!important;
-}
-
-/*============= LANDING PAGE =============*/
-
+/*============= HERO / LANDING =============*/
 .parallax-home {
    height: 100vh;
 }
 
+/*============= BUTTONS =============*/
 .btn {
-   font-size: 1.1rem;
-   border-width: medium;
-   padding: .5rem 1.2rem;
-   font-weight: 500!important;
-   text-transform: uppercase;
-   border-radius: .2rem;
+   font-size: 1rem;
+   border-width: 2px;
+   padding: 0.55rem 1.3rem;
+   font-weight: 600;
+   border-radius: 6px;
+   letter-spacing: 0.03em;
 }
 
-.home-social {
-   color: #fff;
-   font-size: 1.9rem;
-   padding-right: 1rem;
-}
-.home-social:hover {
-   color: #DDDEDF;
+/* Primary */
+.btn-primary {
+   background-color: var(--accent);
+   border-color: var(--accent);
+   color: #ffffff;
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+   background-color: var(--accent-hover);
+   border-color: var(--accent-hover);
+}
+
+/* Outline */
+.btn-outline-primary {
+   color: var(--accent);
+   border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+   background-color: #DBEAFE;
+   color: var(--text-main);
+}
+
+/* Legacy support */
 .bh-button {
-   background-color: #065F46 !important;
-   border-color: #065F46 !important;
-   color: #fff !important;
+   background-color: var(--accent) !important;
+   border-color: var(--accent) !important;
+   color: #ffffff !important;
 }
+
 .bh-button:hover,
 .bh-button.active {
-   background-color: #047857 !important;
-   border-color: #047857 !important;
+   background-color: var(--accent-hover) !important;
+   border-color: var(--accent-hover) !important;
 }
 
-/*============= ABOUT SECTION =============*/
-
-.offset:before {
-   content: "";
-   height: 3.875rem;
-   margin-top: -3.875rem;
-   display: block;
+/*============= SOCIAL ICONS =============*/
+.home-social {
+   color: #ffffff;
+   font-size: 1.8rem;
+   padding-right: 1rem;
 }
 
+.home-social:hover {
+   color: #DBEAFE;
+}
+
+/*============= SECTION HEADINGS =============*/
 .heading {
    text-align: left;
    font-size: 2rem;
    text-transform: uppercase;
    font-weight: 700;
 }
+
 .heading-underline {
    width: 3rem;
-   height: .2rem;
-   background-color: #065F46;
+   height: 0.25rem;
+   background-color: var(--accent);
    margin: 1rem 0;
 }
 
 .text-custom {
-   color: #065F46;
+   color: var(--accent);
 }
 
-/*============= SKILLS SECTION =============*/
-
+/*============= ABOUT / SKILLS =============*/
 .about .svg-inline--fa {
-   color: #065F46;
+   color: var(--accent);
 }
+
 .lead {
-   font-size: 1.5rem;
+   font-size: 1.3rem;
+   color: var(--text-muted);
 }
 
-/*-- Jumbotron Class Dropped in Bootstrap 5 --*/
-.bg-light  {
-   border-top: 1px solid #ECEEEF;
-   border-bottom: 1px solid #ECEEEF;
+/* Light section divider */
+.bg-light {
+   background-color: var(--bg-card) !important;
+   border-top: 1px solid var(--border-light);
+   border-bottom: 1px solid var(--border-light);
 }
 
-/*============= TEAMMATES SECTION =============*/
-
+/*============= TEAM / CARDS =============*/
 #teammates img {
-   border: .2rem solid #065F46;
+   border: 2px solid var(--accent);
 }
+
 #teammates h4 {
-   color: #065F46;
+   color: var(--accent);
 }
 
-/*============= CONTACT SECTION =============*/
-
+/*============= CONTACT / FOOTER =============*/
 .footer {
    background-color: #1E293B;
+   color: #ffffff;
 }
+
 .footer a {
-   color: white;
-   text-decoration: none;
+   color: #ffffff;
 }
 
 .socket {
-   border-top: .2rem solid #666b71;
+   border-top: 1px solid #374151;
 }
-/* ===============================
-   Button Alignment (Unified)
-================================ */
-
-/* Base button consistency */
-.btn,
-.bh-button {
-   border-radius: 6px;
-   letter-spacing: 0.03em;
-}
-
-/* Bootstrap primary alignment */
-.btn-primary {
-   background-color: #065F46;
-   border-color: #065F46;
-   color: #fff;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-   background-color: #047857;
-   border-color: #047857;
-}
-
-/* Outline buttons */
-.btn-outline-primary {
-   color: #065F46;
-   border-color: #065F46;
-}
-
-.btn-outline-primary:hover {
-   background-color: #A7F3D0;
-   color: #1E293B;
-}
-
-/* Legacy bh-button alignment */
-.bh-button {
-   background-color: #065F46 !important;
-   border-color: #065F46 !important;
-   color: #fff !important;
-}
-
-.bh-button:hover,
-.bh-button.active {
-   background-color: #047857 !important;
-   border-color: #047857 !important;
-}
-
 
 /*============= MEDIA QUERIES =============*/
-
-/* Medium (md) devices (tablets, 768px and under) */
 @media (max-width: 767.98px) {
    .parallax-home {
-      height: 100vh;
       min-height: 500px;
    }
+
    .btn {
-      font-size: 1rem;
-      padding: .45rem 1.05rem;
+      font-size: 0.95rem;
+      padding: 0.5rem 1.1rem;
    }
 }
 
-/*============ BOOTSTRAP BREAK POINTS:
-
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
-
-/*============= UNIVERSAL PARALLAX PLUGIN CSS =============*/
+/*============= PARALLAX SUPPORT =============*/
 .parallax-container {
-   -webkit-align-items: center;
-   align-items: center;
-   display: -webkit-flex;
-   display: -ms-flexbox;
    display: flex;
-   -ms-flex-align: center;
-   -webkit-flex-wrap: wrap;
-   -ms-flex-wrap: wrap;
+   align-items: center;
    flex-wrap: wrap;
-   margin: 0;
-   padding: 15px;
    position: relative;
    width: 100%;
+   padding: 15px;
 }
+
 .parallax-container .parallax-content {
    margin: 0 auto;
    width: 100%;
 }
+
 .parallax__container {
    clip: rect(0, auto, auto, 0);
    height: 100%;
@@ -289,15 +251,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
    width: 100%;
    z-index: -100;
 }
+
 .parallax__container .parallax {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    position: fixed;
    top: 0;
-   -webkit-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
-   -webkit-transform-style: preserve-3d;
-   transform-style: preserve-3d;
    width: 100%;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
